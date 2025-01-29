@@ -39,3 +39,33 @@
 -Kt,h -s8+h -d10+hn -f-1 --md5sig -Asn -Ku -a5 -An
 -Kt,h -s5 -d10+sh -f-1 --md5sig -Asn -Ku -a5 -An
 -Kt,h -s4 -q6+n -f-1 --md5sig -Asn -Ku -a5 -An
+-Kt,h -s0+s -s3+hn -s6+sn -d9+sh -o1500+s -f-1 --md5sig -b2000 -An -Ku -a7 -An
+-Kt,h -n cloudflare.com -d 1+s -O 3 -s 2048+s -t 3 --tls-sni=cloudflare.com -An -Ku -a3 -An
+-Kt,h -s5+sh -d27015+hn -q3+s -f-1 --md5sig -b3500 -n steamcommunity.com -An -Ku -a4 -An
+-Kt,h -Y -s9+mt -d7+mt -o3+mt -q7+mt -f-1 --md5sig -bvar=500-2000 -An -Ku -a6 -An
+-Kt,h -s1+s -d1+s -s3+s -d3+s -s5+s -d5+s -r0.5+s -f-1 --md5sig -An -Ku -a9 -An
+-Kt,h -n zoom.us -d 8801+s -O 9 -s 8802+s -t 9 --ttl 127 -An -Ku -a2 -An
+-Kt,h -s8+bt -d6969+bt -q10+bt -f-1 --md5sig -b5000 --tls-sni=tracker.opentrackr.org -An -Ku -a8 -An
+-Kt,h -Ae -svar=0-30+s -dvar=1-30+s -ovar=100-15000+s -f-1 --md5sig -An -Ku -a5 -An
+-Kt,h -Mx -s15+rx -d15+rx -o15+rx -f-1 --md5sig -An -Ku -a6 -An
+-Kt,h -s5222+hm -d5223+hm -q3+hm -f-1 --md5sig -n telegram.org -An -Ku -a3 -An
+-Kt,h -Mx,rf -svar=24-1600+sr -dvar=24-1600+sr -f-1 --sha256sig -bvar=300-1500 -An -Ku -a9 -An --ttl=64
+-Kt,h -n aws.amazon.com -d 443+s -O 9 -s 80+hn -t 2 --tls-sni=aws.amazon.com -b2048 -An -Ku -a4 -An
+-Kt,h -Y -s53+udp -d53+udp -s443+tcp -d443+tcp -f-1 --md5sig -bvar=500-3000 -An -Ku -a6 -An
+-Kt,h -s53+dnscrypt -d53+dns -q3+dnspadding -f-1 --edns=4096 -An -Ku -a7 -An
+-Kt,h -svar=0-1428+5g -dvar=0-1428+5g -ovar=500-9000+mtu -f-1 --aead-cipher -An -Ku -a8 -An
+-Kt,h -n iot.microsoft.com -d 8883+mqtt -s 1883+mqtts -O 1 -t 3 --ttl=128 -An -Ku -a2 -An
+-Kt,h -Mq,xt -s64+qp -d64+qp -o128+qp -f-1 --xor-layer=3 -An -Ku -a9 -An
+-Kt,h -s5060+sip -d5061+sips -qvar=100-300+rtp -f-1 --zrtp-sig -An -Ku -a5 -An
+-Kt,h -Y -s0+chaos -d0+chaos -r0.01+chaos -f-1 --chaos-layer=7 -An -Ku -a9 -An
+-Kt,h -s3478+udp -d3074+udp -q5000+tcp -f-1 --gameproto-sig -n steamserver.com -An -Ku -a6 -An
+-Kt,h -svar=0-65535+smux -dvar=0-65535+smux -f-1 --smux-version=3 -An -Ku -a7 -An
+-Kt,h -s9001+tor -d9030+tor -f-1 --tor-cell-padding -n torproject.org -An -Ku -a8 -An
+-Kt,h -Mp,ghost -svar=128-4096+phantom -dvar=128-4096+phantom -f-1 --ghost-layer=2 -An -Ku -a9 -An
+-Kt,h -n netflix.com -d 443+nf -s 80+nf -O 5 -t 3 --tls-sni=netflix.com -bvar=1024-2048 -An -Ku -a4 -An
+-Kt,h -s8333+btc -d18333+btc -f-1 --blockchain-sig -n bitcoin.org -An -Ku -a7 -An
+-Kt,h -s32+pf -d32+pf -o64+pf -f7 --polymorph-key=dynamic -An -Ku -a9 -An
+-Kt,h -Y -svar=0-9000+spectre -dvar=0-9000+spectre -f-1 --spectral-mode=3 -An -Ku -a8 -An
+-Kt,h -n apple.com -d 5223+apns -s 443+apps -O 2 -t 5 --tls-sni=apple.com -An -Ku -a3 -An
+-Kt,h -Mai -svar=0-1500+nn -dvar=0-1500+nn -f-1 --nn-model=v3 -An -Ku -a9 -An
+-Kt,h -svar=500-4500+cvpn -dvar=500-4500+cvpn -O 9 -f-1 --ikev2-sig -An -Ku -a6 -An
